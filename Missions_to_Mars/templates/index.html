@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <title>Mission to Mars</title>
+</head>
+
+<body>
+  <div clas="container">
+    <div class="jumbotron">
+      <h1 align="center">Mission to Mars</h1>
+      <p align="Center">
+        <a class="btn btn-primary btn" href="/scrape" role="button">Scrape New Data</a>
+      </p>
+  </div>
+  <div class="container-fluid news no-padding" id="scraped-data">
+    <div class="row no-gutter">
+      <div class="card-body">
+        <h5 class="card-title" id="font">Latest Mars News</h5>
+        <h3 class="card-subtitle mb-2 " id="font">Mars Now</h3>
+        <p class="card-text">In a Q&A, spacesuit designer Amy Ross explains how five samples, including a piece of
+          helmet visor,
+          will be tested aboard the rover, which is targeting a July 30 launch. </p>
+        <a href=https://mars.nasa.gov/news/ target="_blank">Check All News</a>
+      </div>
+    </div>
+    <div class="row no-gutter img-table">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body" id="img-table">
+            <h3 class="card-title">Featured Mars Image</h3>
+            <p class="card-text" id="dark-font">View of Curiosity's First Scoop Also Shows Bright Object</p>
+            <img class="card-img-bottom"
+              src="https://www.jpl.nasa.gov//spaceimages/images/wallpaper/PIA23436-640x350.jpg"
+              alt="Featured Mars Image">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body" id="img-table">
+            <div class="col-md-12">
+              <h3 class="card-title">Current Weather on Mars</h3>
+              <p class="card-text" id="dark-font">InSight sol 593 (2020-07-27) low -91.8ºC 
+                (-133.2ºF) high -16.0ºC (3.3ºF) winds from the WNW at 6.5 m/s (14.4 mph) 
+                gusting to 18.8 m/s (42.1 mph) pressure at 7.90 hPa. </p>
+              <h3>Mars Facts</h3>
+            </div>
+            <div class="card-body" id="img-table">
+              <div class="col-md-12">
+                <div>
+                  <h5 class="card-title">Mars Facts</h5>
+                  <p class="card-text" id="dark-font">
+                  <table border="1" class="dataframe">
+                    <tbody>
+                      <tr>
+                        <td>Equatorial Diameter:</td>
+                        <td>6,792 km</td>
+                      </tr>
+                      <tr>
+                        <td>Polar Diameter:</td>
+                        <td>6,752 km</td>
+                      </tr>
+                      <tr>
+                        <td>Mass:</td>
+                        <td>6.42 x 10^23 kg (10.7% Earth)</td>
+                      </tr>
+                      <tr>
+                        <td>Moons:</td>
+                        <td>2 (Phobos &amp; Deimos)</td>
+                      </tr>
+                      <tr>
+                        <td>Orbit Distance:</td>
+                        <td>227,943,824 km (1.52 AU)</td>
+                      </tr>
+                      <tr>
+                        <td>Orbit Period:</td>
+                        <td>687 days (1.9 years)</td>
+                      </tr>
+                      <tr>
+                        <td>Surface Temperature:</td>
+                        <td>-153 to 20 °C</td>
+                      </tr>
+                      <tr>
+                        <td>First Record:</td>
+                        <td>2nd millennium BC</td>
+                      </tr>
+                      <tr>
+                        <td>Recorded By:</td>
+                        <td>Egyptian astronomers</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3 align="center" id="font">Mars Hemisphere</h3>
+      <div class="row">
+
+        <div class="col-md-3">
+          <button type="button" class="btn-custom" data-toggle="modal" data-target="#Cerberus-Hemisphere-Enhanced"><img
+              src="https://astrogeology.usgs.gov/cache/images/f5e372a36edfa389625da6d0cc25d905_cerberus_enhanced.tif_full.jpg"
+              class="img-thumbnail" alt="Cerberus Hemisphere Enhanced">
+          </button>
+          <h6 class="card-text" align="center" id="font">Cerberus Hemisphere Enhanced</h6>
+        </div>
+
+        <div class="col-md-3">
+          <button type="button" class="btn-custom" data-toggle="modal"
+            data-target="#Schiaparelli-Hemisphere-Enhanced"><img
+              src="https://astrogeology.usgs.gov/cache/images/3778f7b43bbbc89d6e3cfabb3613ba93_schiaparelli_enhanced.tif_full.jpg"
+              class="img-thumbnail" alt="Schiaparelli Hemisphere Enhanced">
+          </button>
+          <h6 class="card-text" align="center" id="font">Schiaparelli Hemisphere Enhanced</h6>
+        </div>
+
+        <div class="col-md-3">
+          <button type="button" class="btn-custom" data-toggle="modal"
+            data-target="#Syrtis-Major-Hemisphere-Enhanced"><img
+              src="https://astrogeology.usgs.gov/cache/images/555e6403a6ddd7ba16ddb0e471cadcf7_syrtis_major_enhanced.tif_full.jpg"
+              class="img-thumbnail" alt="Syrtis Major Hemisphere Enhanced">
+          </button>
+          <h6 class="card-text" align="center" id="font">Syrtis Major Hemisphere Enhanced</h6>
+        </div>
+
+        <div class="col-md-3">
+          <button type="button" class="btn-custom" data-toggle="modal"
+            data-target="#Valles-Marineris-Hemisphere-Enhanced"><img
+              src="https://astrogeology.usgs.gov/cache/images/b3c7c6c9138f57b4756be9b9c43e3a48_valles_marineris_enhanced.tif_full.jpg"
+              class="img-thumbnail" alt="Valles Marineris Hemisphere Enhanced">
+          </button>
+          <h6 class="card-text" align="center" id="font">Valles Marineris Hemisphere Enhanced</h6>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="Cerberus-Hemisphere-Enhanced" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cerberus Hemisphere Enhanced</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" id="close-botton">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img
+            src="https://astrogeology.usgs.gov/cache/images/f5e372a36edfa389625da6d0cc25d905_cerberus_enhanced.tif_full.jpg"
+            class=" img-fluid" alt="Cerberus Hemisphere Enhanced">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Schiaparelli-Hemisphere-Enhanced" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Schiaparelli Hemisphere Enhanced</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" id="close-botton">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img
+            src="https://astrogeology.usgs.gov/cache/images/3778f7b43bbbc89d6e3cfabb3613ba93_schiaparelli_enhanced.tif_full.jpg"
+            class=" img-fluid" alt="Schiaparelli Hemisphere Enhanced">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Syrtis-Major-Hemisphere-Enhanced" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Syrtis Major Hemisphere Enhanced</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" id="close-botton">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img
+            src="https://astrogeology.usgs.gov/cache/images/555e6403a6ddd7ba16ddb0e471cadcf7_syrtis_major_enhanced.tif_full.jpg"
+            class=" img-fluid" alt="Syrtis Major Hemisphere Enhanced">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Valles-Marineris-Hemisphere-Enhanced" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Valles Marineris Hemisphere Enhanced</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" id="close-botton">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img
+            src="https://astrogeology.usgs.gov/cache/images/b3c7c6c9138f57b4756be9b9c43e3a48_valles_marineris_enhanced.tif_full.jpg"
+            class=" img-fluid" alt="Valles Marineris Hemisphere Enhanced">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
